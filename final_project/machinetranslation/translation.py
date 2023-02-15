@@ -34,6 +34,7 @@ def english_to_french(english_text):
 
 
 def french_to_english(french_text):
+    print('cer')
     '''this function is for translating the french text to english'''
     if french_text:
         return language_translator.translate(
@@ -42,3 +43,6 @@ def french_to_english(french_text):
         ).get_result()['translations'][0]['translation']
     else:
         return None
+
+print(french_to_english('Bonjour'))
+print(english_to_french('Hello'))
